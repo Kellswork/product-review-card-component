@@ -1,0 +1,223 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@font-face {
+  font-family: "Montesrrat Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montesrrat Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces Small";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Fraunces_9pt-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces Large";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/Fraunces_144pt-Bold.ttf") format("truetype");
+}
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral */
+  --gunmetal: hsl(212, 21%, 14%);
+  --aurometal-saurus: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  /** Font Size */
+  --display-mobile: 2rem;
+  --overline-mobile: 0.75rem;
+  --body-mobile: 0.875rem;
+  --button-text: 0.875rem;
+}
+body {
+  background-color: var(--cream);
+}
+
+.product-card {
+  margin: 28px 16px;
+}
+
+.product-card__container {
+  margin: 24px;
+}
+.product-card__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.product-card__text-container {
+  padding: 24px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.product-card__ribbon {
+  text-transform: uppercase;
+  font-family: "Montesrrat Medium", sans-serif;
+  font-size: var(--overline-mobile);
+  letter-spacing: 0.3125rem;
+  color: var(--aurometal-saurus);
+}
+.product-card__title {
+  font-family: "Fraunces Small", sans-serif;
+  font-size: var(--display-mobile);
+  color: var(--gunmetal);
+}
+
+.product-card__description {
+  font-size: var(--body-mobile);
+  font-family: "Montesrrat Medium", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  line-height: 1.64;
+  color: var(--aurometal-saurus);
+  padding: 2px;
+}
+.product-card__prices {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 20px;
+}
+.product-card__price {
+  font-size: var(--display-mobile);
+  font-family: "Fraunces Large", sans-serif;
+  color: var(--dark-cyan);
+}
+.product-card__old_price {
+  font-size: var(--body-mobile);
+  font-family: "Montesrrat Medium", sans-serif;
+  color: var(--aurometal-saurus);
+}
+
+.product-card__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--button-text);
+  font-family: "Montesrrat Bold", sans-serif;
+  display: flex;
+  background-color: var(--dark-cyan);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  gap: 11px;
+  border-radius: 10px;
+}
+
+.product-card__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer {
+  margin: 0 16px 8px 16px;
+}
