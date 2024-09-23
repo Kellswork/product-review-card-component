@@ -221,3 +221,43 @@ body {
 footer {
   margin: 0 16px 8px 16px;
 }
+
+.attribution {
+  font-family: "Montesrrat Medium", sans-serif;
+  font-size: var(--overline-mobile);
+
+}
+@media only screen and (min-width: 632px) {
+  .product-card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+  }
+  .product-card {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-card__text-container,
+  .product-card__image-container {
+    width: 50%;
+  }
+
+  .product-card__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .product-card__text-container {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .attribution{
+    display: flex;
+    justify-content: center;
+  }
+}
+
