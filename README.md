@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github.com/Kellswork/product-review-card-component](https://github.com/Kellswork/product-review-card-component)
+- Live Site URL: [kellswork.github.io/product-review-card-component](https://kellswork.github.io/product-review-card-component/)
 
 ## My process
 
