@@ -95,28 +95,28 @@ textarea:not([rows]) {
   font-family: "Montesrrat Bold";
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+  src: url("fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montesrrat Medium";
   font-weight: 500;
   font-style: normal;
-  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fraunces Small";
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/Fraunces_9pt-Bold.ttf") format("truetype");
+  src: url("fonts/Fraunces_9pt-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Fraunces Large";
   font-weight: 700;
   font-style: normal;
-  src: url("/fonts/Fraunces_144pt-Bold.ttf") format("truetype");
+  src: url("fonts/Fraunces_144pt-Bold.ttf") format("truetype");
 }
 
 :root {
