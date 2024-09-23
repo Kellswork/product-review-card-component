@@ -125,6 +125,7 @@ textarea:not([rows]) {
   /* Primary */
   --dark-cyan: hsl(158, 36%, 37%);
   --cream: hsl(30, 38%, 92%);
+  --deep-acquamarine: hsl(157, 43%, 18%);
 
   /* Neutral */
   --gunmetal: hsl(212, 21%, 14%);
@@ -210,6 +211,18 @@ body {
   color: white;
   gap: 11px;
   border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.product-card__btn:hover{
+  background-color: var(--deep-acquamarine);
+}
+
+.product-card__btn:focus-visible {
+  outline: 3px solid var(--deep-acquamarine);
+  outline-offset: 4px;
 }
 
 .product-card__title-group {
