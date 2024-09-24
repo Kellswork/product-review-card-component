@@ -104,6 +104,7 @@ textarea:not([rows]) {
   font-weight: 500;
   font-style: normal;
   src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -111,6 +112,7 @@ textarea:not([rows]) {
   font-weight: 700;
   font-style: normal;
   src: url("fonts/Fraunces_9pt-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -118,6 +120,7 @@ textarea:not([rows]) {
   font-weight: 700;
   font-style: normal;
   src: url("fonts/Fraunces_144pt-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 :root {
@@ -145,7 +148,7 @@ body {
 .product-card-main {
   display: grid;
   place-items: center;
-  height: 99vh;
+  height: 100vh;
 }
 
 .product-card {
