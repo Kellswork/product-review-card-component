@@ -145,7 +145,7 @@ body {
 .product-card-main {
   display: grid;
   place-items: center;
-  height: 97vh;
+  height: 99vh;
 }
 
 .product-card {
