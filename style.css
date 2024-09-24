@@ -96,6 +96,7 @@ textarea:not([rows]) {
   font-weight: 700;
   font-style: normal;
   src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
@@ -149,7 +150,7 @@ body {
 
 .product-card {
   width: 90%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .product-card__container {
@@ -238,7 +239,7 @@ body {
 }
 
 footer {
-  margin: 0 16px 8px 16px;
+  margin: 24px 16px 8px 16px;
 }
 
 .attribution {
@@ -246,7 +247,7 @@ footer {
   font-size: var(--overline-mobile);
 
 }
-@media only screen and (min-width: 632px) {
+@media only screen and (min-width: 39.5rem) {
 
   .product-card {
     max-width: 37.5rem;
